@@ -53,3 +53,73 @@
 </table>
 
 </details>
+
+
+-------------------------------------------------------------------------------
+
+<details>
+
+<summary>SELECT</summary>
+
+***Tüm kayitlari getirir***
+
+```sql
+SELECT * FROM table_name;
+```
+
+***Tüm kayitlari belirtilen kolonlara gore getirir***
+
+```sql
+SELECT column1, column2....columnN FROM table_name;
+```
+
+***Farkli kayitlari getirir***
+
+```sql
+SELECT DISTINCT column1, column2....columnN FROM table_name;
+```
+
+***Belirtilen kosullara uyan kayitlari getirir***
+
+```sql
+SELECT column1, column2....columnN FROM table_name WHERE CONDITION;
+```
+
+***Ve/Veya kosulunu saglayan kayitlari getirir***
+
+```sql
+SELECT column1, column2....columnN FROM table_name WHERE CONDITION-1 {AND|OR} CONDITION-2; CHAPTER 4
+```
+
+***Belirtilen degerdeki kayitlari getirir***
+
+```sql
+SELECT column1, column2....columnN FROM table_name WHERE column_name IN (val-1, val-2,...val-N);
+```
+
+***Belirtilen araliktaki kayitlari getirir***
+
+```sql
+SELECT column1, column2....columnN FROM table_name WHERE column_name BETWEEN val-1 AND val-2;
+```
+
+***Belirtilen kolona gore kayitlari kucuten buyuge yada buyukten kucuge siralar***
+
+```sql
+SELECT column1, column2....columnN FROM table_name WHERE CONDITION ORDER BY column_name {ASC|DESC};
+```
+
+***Belirtilen kolona gore kayitlari gruplar***
+
+```sql
+SELECT SUM(column_name) FROM table_name WHERE CONDITION GROUP BY column_name;
+```
+
+***Kayit sayisini verir***
+
+```sql
+SELECT COUNT(column_name) FROM table_name WHERE CONDITION;
+```
+
+
+</details>
